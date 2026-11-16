@@ -9,13 +9,13 @@ let SETTINGS = {
   brandName: "آثر",
   brandEn: "Athar",
   tagline: "اكتشفي إكسسواراتك مع آثر",
-  whatsappNumber: "201508126005",
+  whatsappNumber: "201040922823",
   currency: "جنيه"
 };
 
 // ===== روابط التواصل =====
 let SOCIAL_LINKS = {
-  whatsapp: "https://wa.me/201508126005",
+  whatsapp: "https://wa.me/201040922823",
   instagram: "https://www.instagram.com/athar_1_11",
   tiktok: "https://www.tiktok.com/@athar_1_11"
 };
@@ -352,6 +352,12 @@ let REVIEWS = [
   { id: 48, name: "علياء سعيد", stars: 5, product: "انسيلات #21", text: "المقاس والشكل زي ما اتفقنا على واتساب بالظبط، مفيش اختلاف." },
   { id: 49, name: "شروق أسامة", stars: 5, product: "سلاسل #13", text: "بجمع السلاسل الرفيعة وعندي منهم كذا موديل، الجودة ثابتة في كل مرة." },
   { id: 50, name: "ليلى محمود", stars: 5, product: "COMBO-01", text: "طلبت 3 مرات قبل كده ومفيش مرة خذلوني، عشان كده برشحهم لأي حد يسألني." },
+];
+
+// ===== هدايا آثر - منتجان قابلان للتعديل بسهولة (اسم وسعر) =====
+let GIFTS_PRODUCTS = [
+  { id: "GIFT-01", num: 1, name: "اسم الهداية الأولى", price: 150, image: "خواتم/IMG_6968.jpeg", desc: "وصف هدية آثر الأولى" },
+  { id: "GIFT-02", num: 2, name: "اسم الهداية الثانية", price: 200, image: "انسيلات/IMG_7214.jpeg", desc: "وصف هدية آثر الثانية" }
 ];
 
 // ===== الأسئلة والاسترجاع - Accordion =====

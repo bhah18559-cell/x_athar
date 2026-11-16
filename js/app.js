@@ -84,6 +84,7 @@ function getAllItems(){
   if(typeof NECKLACES !== 'undefined') extra.push(...NECKLACES);
   if(typeof RINGS !== 'undefined') extra.push(...RINGS);
   if(typeof EARRINGS !== 'undefined') extra.push(...EARRINGS);
+  if(typeof GIFTS_PRODUCTS !== 'undefined') extra.push(...GIFTS_PRODUCTS);
   return [...PRODUCTS, ...COMBOS, ...extra];
 }
 function findById(id){
@@ -97,6 +98,8 @@ function renderHome(){
   if(accGrid) accGrid.innerHTML = PRODUCTS.map(p=> productCardHTML(p,'product')).join('');
   const comboGrid = document.getElementById('combosGridAfterHero');
   if(comboGrid) comboGrid.innerHTML = COMBOS.map(p=> productCardHTML(p,'combo')).join('');
+  const giftsGrid = document.getElementById('giftsGridAfterHero');
+  if(giftsGrid && typeof GIFTS_PRODUCTS !== 'undefined') giftsGrid.innerHTML = GIFTS_PRODUCTS.map(p=> productCardHTML(p,'product')).join('');
   const braGrid = document.getElementById('braceletsGrid');
   if(braGrid && typeof BRACELETS !== 'undefined') braGrid.innerHTML = BRACELETS.map(p=> productCardHTML(p,'product')).join('');
   const necGrid = document.getElementById('necklacesGrid');
